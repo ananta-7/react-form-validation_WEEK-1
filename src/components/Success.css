@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Varela');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Varela', sans-serif;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(19,80,88,1) 100%);
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px; /* add some padding for smaller screens */
+  box-sizing: border-box;
+}
+
+.success-container {
+  background: rgba(57, 89, 116, 0.8);
+  box-shadow: 1px 1px 10px 1px #000000, 8px 8px 0px 0px #344454, 12px 12px 10px 0px #000000;
+  padding: 40px 30px;
+  border-radius: 4px;
+  width: 100%;           /* Take full width by default */
+  max-width: 400px;      /* But not more than 400px */
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow-wrap: break-word; /* Handle very long words gracefully */
+}
+
+.success-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #344455;
+  padding: 15px;
+  box-shadow: 0 0 9px 2px #344454;
+  display: block;
+  object-fit: contain;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  word-wrap: break-word;
+}
+
+ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+  color: #eee;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 1rem;
+}
+
+ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  word-wrap: break-word;
+}
+
+strong {
+  color: #93a5ab;
+  text-transform: capitalize;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #93a5ab;
+  padding: 10px 50px;
+  color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 0 #7692A7;
+  transition: all ease 0.8s;
+  white-space: nowrap; /* prevent breaking in the middle */
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button:hover,
+button:focus {
+  border-color: #fff;
+  box-shadow: inset 0 0 100px 0 #7692A7;
+  color: #fff;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    padding: 20px 10px;
+  }
+
+  .success-container {
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px 0;
+    white-space: normal; /* allow wrapping on smaller screens */
+  }
+}

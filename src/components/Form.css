@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Varela");
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Varela", sans-serif;
+}
+
+.page-container {
+  height: 100%;
+  position: relative;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(19, 80, 88, 1) 100%
+  );
+  overflow: auto;
+}
+
+.particles {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  z-index: 0 !important;
+}
+
+.form-container {
+  position: relative;
+  max-width: 400px;
+  margin: 10% auto 8%;
+  padding: 60px 40px 40px;
+  background: rgba(57, 89, 116, 0.85);
+  box-shadow: 1px 1px 10px 1px #000000, 8px 8px 0px 0px #344454,
+    12px 12px 10px 0px #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #344455;
+  padding: 15px;
+  box-shadow: 0 0 9px 2px #344454;
+  display: block;
+  object-fit: contain;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4a525f;
+  background-color: rgba(40, 52, 67, 0.75);
+  color: #eee;
+  border-left: 4px solid #93a5ab;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 0;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-left: 4px solid #ccd8da;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.checkbox-group {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+}
+
+.phone-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #93a5ab;
+  padding: 10px 0;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.8s ease;
+  box-shadow: inset 0 0 0 0 #7692a7;
+  border-radius: 0;
+}
+
+.btn-submit:hover {
+  border-color: #fff;
+  box-shadow: inset 0 0 100px 0 #7692a7;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20% 15px 8%;
+    padding: 60px 20px 30px;
+  }
+  .phone-inputs {
+    flex-direction: column;
+  }
+}
